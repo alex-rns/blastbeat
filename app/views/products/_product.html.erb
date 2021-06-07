@@ -1,0 +1,17 @@
+<div class="col-md-6 col-lg-4 col-xxl-3 col-12 align-items-center">
+  <div class="card m-3 h-100 m-auto w-100">
+    <div class="card-header d-flex justify-content-between align-items-center px-3 bg-success text-white-50">
+      <small class="p-1"><%= product.category %></small>
+      <small class="p-1 fw-bolder"><%= product.manufactured %></small>
+    </div>
+    <%= image_tag(product.image, class: "card-img-top p-2") %>
+    <div class="card-body">
+      <h5 class="card-title fw-light"><%= product.title %></h5>
+      <p class="card-text lh-sm"><%= product.description.truncate(130) %></p>
+    </div>
+    <div class="card-footer d-flex justify-content-between align-items-center px-3">
+      <small class="m-0 pr-1 fw-bolder">$<%= product.price %></small>
+      <small class="m-0 pr-1 fw-bolder"><%= product.brand %></small>
+    </div>
+  </div>
+</div>
