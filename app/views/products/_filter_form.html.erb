@@ -4,20 +4,19 @@
 
 <%= form_with url: products_path, method: :get do |f| %>
 
-  <% brands_list(@products).each do |brand| %>
+  <%# brands_list(@products).each do |brand| %>
+  <!--    <div>-->
+  <%#= f.check_box "brand[]", { checked: checked?(brand, brand) }, brand, "" %>
+  <%#= f.label brand %>
+  <!--    </div>-->
+  <%# end %>
+
+  <%= f.collection_check_boxes :brand, uniq_brand, :brand, :brand do |b| %>
     <div>
-      <%= f.check_box "brand[]", { checked: checked?(brand, brand)}, brand, "" %>
-      <%= f.label brand %>
+      <%= b.check_box %>
+      <%= b.label %>
     </div>
-    <% end %>
-
-  <%#= f.collection_check_boxes :product_ids, Product.all, :brand, :brand do |b| %>
-<!--    <div>-->
-      <%#=  b.check_box %>
-      <%#=  b.label %>
-<!--    </div>-->
-
-    <%# end %>
+  <% end %>
 
   <%= f.submit %>
 
