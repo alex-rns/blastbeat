@@ -3,9 +3,9 @@ Product.find_or_create_by!(
   title: "Fame DD-Lite V2 E-Drum Set",
   description: "The Fame DD-Lite V2 E-Drum Set is a seven-piece drum set for beginners with mesh heads at an entry-level price. The DD-Lite V2 E-Drum Set consists of three tom pads, a dual zone snare pad, three cymbal pads (ride, crash, hihat) and two controllers, one for bass drum and one for hihat. Also included are a sound module and a space-saving rack including all cables. The Cymbal Pads have a choke function, which means they can be stopped. In the clearly arranged module there are 144 sounds, these are organized in 12 kits. Besides the integrated metronome there is an AUX IN, a Master OUT and a MIDI to USB connection. Since all drum pads are equipped with mesh heads, the Fame DD-Lite V2 E-Drum Set offers a unique playing experience for this price class. Due to the compact dimensions, the comfortable module and the reasonable price, this is an excellent e-drum set for beginners or to practice drumming in your own home. ",
   price: 192,
-  brand: "Ddrum",
+  brand: "Fame",
   category: "E-drum",
-  manufactured: "USA",
+  manufactured: "China",
   image: "https://images.musicstore.de/images/0960/fame-dd-lite-v2-e-drum-set_1_DRU0038935-000.jpg",
 )
 
@@ -13,9 +13,9 @@ Product.find_or_create_by!(
   title: "Fame DD-5500 PRO E-Drum Kit",
   description: "The DD-5500 is the newest member of the Fame eDrum family. As usual the features list reads just like it does from premium, famous manufacturers - until you get to the price! Like its predecessors, the DD-5500 offers the best possible quality at the lowest price. The complete package includes a snare pad, three tom pads, two cymbal pads, a hihat pad with pedal and a kick pedal with the appropriate pedal. This makes the DD-5500 the ideal piece of equipment for practicing, but with its high-quality sound module it is also an uncompromising performer on stage and is perfectly suited for the home studio. Optically the DD-5500 from Fame impresses with a sleek black design decorated with red accents.",
   price: 279,
-  brand: "Ddrum",
+  brand: "Fame",
   category: "E-drum",
-  manufactured: "USA",
+  manufactured: "China",
   image: "https://images.musicstore.de/images/0960/fame-dd-5500-pro-e-drum-kit_1_DRU0027456-000.jpg",
 )
 
@@ -23,9 +23,9 @@ Product.find_or_create_by!(
   title: "FAME DD-5500 Complete 1 - Set",
   description: "Set: DD-5500 Complete 1 - Set contains 1x Fame DD-5500 PRO E-Drum Kit 1x Fame Drum Throne D8020 1x Fame MS-DHP 100 E-Drum Kopfhörer 1x Cascha Verlag Schlagzeug schnell und einfach lernen 1x MUSIC STORE 5A Sticks, Hornbeam, Wood Tip",
   price: 327,
-  brand: "Ddrum",
+  brand: "Fame",
   category: "E-drum",
-  manufactured: "USA",
+  manufactured: "China",
   image: "https://images.musicstore.de/images/0960/fame-dd-5500-complete-1-set_1_DRU095.jpg",
 )
 
@@ -53,7 +53,7 @@ Product.find_or_create_by!(
   title: "Roland TD-17KVX Complete - SET",
   description: "Set: TD-17KVX Complete - SET contains 1x Roland TD-17KVX E-Drum Set 1x Fame HH9000 Hi-Hat Stand Standard 1x Fame Drum Throne D8020 1x Fame FP9001 Kick Pedal 1x Fame MS-DHP 100 E-Drum Kopfhörer 1x MUSIC STORE 5A Sticks, Hornbeam, Wood Tip",
   price: 1637,
-  brand: "Yamaha",
+  brand: "Roland",
   category: "E-drum",
   manufactured: "Japan",
   image: "https://images.musicstore.de/images/0960/roland-td-17kvx-complete-set_1_DRU749.jpg",
@@ -245,7 +245,7 @@ Product.find_or_create_by!(
 The Sonor Vintage Series Bass Drum 20x14 is a faithful recreation of a bass drum steeped in history after its initial introduction in the 60’s. These bass drums were built to the highest standards and were highly rated by international stars like Connie Kay, Sonny Payne or Kenny 'Klook' Clark.
 SONOR Teardrop kits are one of the most sought after vintage drums. Utilizing rounded bearing edges, the new VINTAGE series drums represent the return of the 'old SONOR sound' into its product line. SONOR introduced the 45 degree bearing edge in 1975, which we still use today on all SQ2, Prolite, and Force series drums. With the addition of the Vintage Series, drummers will have access to a complete palette of sounds that is uniquely SONOR.",
   price: 1130,
-  brand: "Pearl",
+  brand: "Sonor",
   category: "Share Drum",
   manufactured: "Germany",
   image: "https://images.musicstore.de/images/0960/sonor-vintage-series-bassdrum-20-x14-vintage-pearl_1_DRU0031470-000.jpg",
@@ -637,7 +637,7 @@ Product.find_or_create_by!(
   price: 192,
   brand: "Zildjian",
   category: "Ride",
-  manufactured: "Germany",
+  manufactured: "USA",
   image: "https://images.musicstore.de/images/0960/zildjian-gen16-buffed-bronze-ride-20-w-o-pickup_1_DRU0030069-000.jpg",
 )
 
@@ -892,7 +892,7 @@ Product.find_or_create_by!(
   price: 77,
   brand: "Ortega",
   category: "Single Pedal",
-  manufactured: "German",
+  manufactured: "Germany",
   image: "https://images.musicstore.de/images/0960/ortega-cajon-pedal-ocjp-gb-inkl-bag_1_DRU0034037-000.jpg",
 )
 
@@ -985,9 +985,9 @@ Product.find_or_create_by!(
   description: "The Tama HP900PWLN Power Glide Iron Cobra Double Bass Drum Pedal is for left handed players looking for a double kick pedal that provides seamless feel, speed and durability.
 The Iron Cobra achieved its legendary status because of its ability to strongly support both the artistic and logistical requirements associated with the art of drumming. Since its inception…smooth, effortless performance and unparalleled response have been hallmarks of the Iron Cobra.",
   price: 373,
-  brand: "Pearl",
+  brand: "Tama",
   category: "Double Pedal",
-  manufactured: "Yamaha",
+  manufactured: "Japan",
   image: "https://images.musicstore.de/images/0960/tama-hp900pwln-iron-cobra-left_1_DRU0033448-000.jpg",
 )
 
@@ -996,9 +996,9 @@ Product.find_or_create_by!(
   description: "The Yamaha DFP9C Double Foot Pedal (Double Chain Drive) is a Foot Pedal for Kick Drums with 2x Pedals, taken from the FP9 Series. The FP9 Series represents high-quality craftsmanship in both Single and Double Pedal versions, with the option of either Double Chain or Direct Drive. The Double Pedal (Double Chain Drive) is also available as a Left-Foot option.
 The DFP9C Double Foot Pedal employs a Double Chain Drive and provides users the option of 2x Beater Weight adjustments per Beater: 3g (Aluminium) and 9g (Brass). Anti-Skid Heel Spikes ensure your Pedal remains where it should be",
   price: 502,
-  brand: "Pearl",
+  brand: "Yamaha",
   category: "Double Pedal",
-  manufactured: "Yamaha",
+  manufactured: "Japan",
   image: "https://images.musicstore.de/images/0960/yamaha-dfp9c-double-foot-pedal-double-chain-drive-_1_DRU0038100-000.jpg",
 )
 
