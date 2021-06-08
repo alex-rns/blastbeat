@@ -1,0 +1,13 @@
+<h4>Sort by <%= attr %></h4>
+<div class="d-flex">
+  <%= f.number_field "min_#{attr}",
+                     value: @products.map(&:"#{attr}").min,
+                     step: 1,
+                     class: 'form-control',
+                     placeholder: "Min #{attr}" %>
+  <%= f.number_field "max_#{attr}",
+                     value: @products.map(&:"#{attr}").max,
+                     step: 1,
+                     class: 'form-control',
+                     placeholder: "Max #{attr}" %>
+</div>

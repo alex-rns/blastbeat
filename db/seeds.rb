@@ -1,3 +1,5 @@
+require 'faker'
+
 #E-drums
 Product.find_or_create_by!(
   title: "Fame DD-Lite V2 E-Drum Set",
@@ -5,7 +7,8 @@ Product.find_or_create_by!(
   price: 192,
   brand: "Fame",
   category: "E-drum",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-dd-lite-v2-e-drum-set_1_DRU0038935-000.jpg",
 )
 
@@ -15,7 +18,8 @@ Product.find_or_create_by!(
   price: 279,
   brand: "Fame",
   category: "E-drum",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-dd-5500-pro-e-drum-kit_1_DRU0027456-000.jpg",
 )
 
@@ -25,7 +29,8 @@ Product.find_or_create_by!(
   price: 327,
   brand: "Fame",
   category: "E-drum",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-dd-5500-complete-1-set_1_DRU095.jpg",
 )
 
@@ -35,7 +40,8 @@ Product.find_or_create_by!(
   price: 415,
   brand: "Yamaha",
   category: "E-drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-dtx452k-e-drum-set_4_DRU0037455-000.jpg",
 )
 
@@ -45,7 +51,8 @@ Product.find_or_create_by!(
   price: 379,
   brand: "Yamaha",
   category: "E-drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-dtx482k-complete-1-set_1_DRU072.jpg",
 )
 
@@ -55,7 +62,8 @@ Product.find_or_create_by!(
   price: 1637,
   brand: "Roland",
   category: "E-drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/roland-td-17kvx-complete-set_1_DRU749.jpg",
 )
 
@@ -65,17 +73,19 @@ Product.find_or_create_by!(
   price: 2142,
   brand: "Roland",
   category: "E-drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/roland-td-27k-practice-set_1_DRU891.jpg",
 )
 
 Product.find_or_create_by!(
   title: "Gewa G9 Pro C5 E-Drum Set",
-  description: "The GEWA G9 Pro C5 electric drum set is a high-end electric drum set with a multifunctional sound module, a DW drum rack, Remo heads and cymbal pads, manufactured according to the Paiste 2002 series. The sound module, the GEWA G9 workstation, offers a 10 touch display, 400 sounds as well as Bluetooth and WI-FI function. The integrated Multi-Chip Architecture has 128 GB internal memory (4 GB Flash memory) for up to 100 WAV or multi-layer samples. Equipped with 14 trigger inputs, 8 direct outputs and Pro Audio Recording Tools, all requirements for professional users are given. The rugged DWe Three Side Rack in combination with Full Size Shells and the unique Cymbal Pads, which are modeled after the weight and feel of the Paiste 2002 Series, creates perfect playing conditions.",
+  description: "The GEWA G9 Pro C5 electric drum set is a high-end electric drum set with a multifunctional sound module, a DW drum rack, Remo heads and cymbal pads, manufacturer according to the Paiste 2002 series. The sound module, the GEWA G9 workstation, offers a 10 touch display, 400 sounds as well as Bluetooth and WI-FI function. The integrated Multi-Chip Architecture has 128 GB internal memory (4 GB Flash memory) for up to 100 WAV or multi-layer samples. Equipped with 14 trigger inputs, 8 direct outputs and Pro Audio Recording Tools, all requirements for professional users are given. The rugged DWe Three Side Rack in combination with Full Size Shells and the unique Cymbal Pads, which are modeled after the weight and feel of the Paiste 2002 Series, creates perfect playing conditions.",
   price: 4198,
   brand: "Gewa",
   category: "E-drum",
-  manufactured: "UK",
+  manufacturer: "UK",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/gewa-g9-pro-c5-e-drum-set_1_DRU0039842-000.jpg",
 )
 
@@ -85,7 +95,8 @@ Product.find_or_create_by!(
   price: 3963,
   brand: "Roland",
   category: "E-drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/roland-td-50k-e-drum-set-uk-version_1_DRU0035226-900.jpg",
 )
 
@@ -95,7 +106,8 @@ Product.find_or_create_by!(
   price: 6629,
   brand: "Roland",
   category: "E-drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/roland-td-50kvx-e-drum-set_1_DRU0037370-000.jpg",
 )
 
@@ -114,7 +126,8 @@ The Pearl RSJ465C Roadshow Junior Set Jet Black is a complete drum set for child
   price: 276,
   brand: "Pearl",
   category: "Acoustic Drums Set",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-rsj465c-roadshow-junior-set-jet-black_1_DRU0038872-000.jpg",
 )
 
@@ -126,7 +139,8 @@ Tama's Accu-Tune hoops have it all. Their hi-tech GFRP material off­ers both li
   price: 545,
   brand: "Tama",
   category: "Acoustic Drums Set",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-rhythm-mate-rm52kh6-white-wh_1_DRU0029102-000.jpg",
 )
 
@@ -136,7 +150,8 @@ Product.find_or_create_by!(
   price: 1175,
   brand: "PDP",
   category: "Acoustic Drums Set",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pdp-pdp-concept-maple-cm7-satin-charcoal-burst_1_DRU0037764-000.jpg",
 )
 
@@ -146,7 +161,8 @@ Product.find_or_create_by!(
   price: 797,
   brand: "Tama",
   category: "Acoustic Drums Set",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-superstar-classic-ck52kr-vintage-white-sparkle_1_DRU0037992-000.jpg",
 )
 
@@ -157,7 +173,8 @@ Pearl start the process by choosing thinner plies of prized Maple, hand selected
   price: 2771,
   brand: "Pearl",
   category: "Acoustic Drums Set",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-reference-pure-rfp-924xep-c-black-cherry-336_1_DRU0024613-000.jpg",
 )
 
@@ -170,7 +187,8 @@ Incorporating Pearl’s S.S.T. Superior Shell Technology, these floor toms offer
   price: 63,
   brand: "Pearl",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-export-exx-snare-14-x5-5-jet-black-31_1_DRU0028767-000.jpg",
 )
 
@@ -181,7 +199,8 @@ The throw-off is easy to release and holds the S-032N snare wire precisely in pl
   price: 74,
   brand: "Pearl",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-sfs10-c31-short-fuse-snare-10-x4-5-jet-black-31_1_DRU0036535-000.jpg",
 )
 
@@ -191,7 +210,8 @@ Product.find_or_create_by!(
   price: 100,
   brand: "Tama",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-metalworks-black-steel-snare-14-x5-5-_1_DRU0038023-000.jpg",
 )
 
@@ -201,7 +221,8 @@ Product.find_or_create_by!(
   price: 140,
   brand: "Gretsch",
   category: "Share Drum",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/gretsch-full-range-ash-snare-10-x6-satin-ebony_1_DRU0039805-000.jpg",
 )
 
@@ -215,7 +236,8 @@ High quality materials and craftsmanship, which you won’t find any where else 
   price: 93,
   brand: "Fame",
   category: "Share Drum",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-maple-standard-bassdrum-16-x14-black_1_DRU0021121-000.jpg",
 )
 
@@ -225,7 +247,8 @@ Product.find_or_create_by!(
   price: 201,
   brand: "Pearl",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-export-exx-bassdrum-22-x18-jet-black-31_1_DRU0028762-000.jpg",
 )
 
@@ -235,7 +258,8 @@ Product.find_or_create_by!(
   price: 268,
   brand: "Pearl",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-export-exl-bassdrum-22-x18-natural-cherry-246_1_DRU0030965-000.jpg",
 )
 
@@ -247,7 +271,8 @@ SONOR Teardrop kits are one of the most sought after vintage drums. Utilizing ro
   price: 1130,
   brand: "Sonor",
   category: "Share Drum",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/sonor-vintage-series-bassdrum-20-x14-vintage-pearl_1_DRU0031470-000.jpg",
 )
 
@@ -257,7 +282,8 @@ Product.find_or_create_by!(
   price: 1204,
   brand: "Yamaha",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-absolute-maple-hybrid-bassdrum-20-x16-classic-walnut-wln_1_DRU0032819-000.jpg",
 )
 
@@ -267,7 +293,8 @@ Product.find_or_create_by!(
   price: 1637,
   brand: "Yamaha",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-recording-custom-bassdrum-22-x18-solid-black_1_DRU0033862-000.jpg",
 )
 
@@ -280,7 +307,8 @@ Quick-Lock Tom- and Floor-Tom clamps make the setup and collapse of the drum-set
   price: 1739,
   brand: "Tama",
   category: "Share Drum",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-star-bubinga-bassdrum-20-x16-dark-green-cordia-cdkg_1_DRU0028403-000.jpg",
 )
 
@@ -293,7 +321,8 @@ Product.find_or_create_by!(
   price: 86,
   brand: "Pearl",
   category: "Floor Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-export-exx-floortom-14-x14-arctic-sparkle-700_1_DRU0028751-000.jpg",
 )
 
@@ -303,7 +332,8 @@ Product.find_or_create_by!(
   price: 209,
   brand: "Gretsch",
   category: "Floor Tom",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/gretsch-catalina-maple-floortom-14-x14-aqua-sparkle-as_1_DRU0028884-000.jpg",
 )
 
@@ -313,7 +343,8 @@ Product.find_or_create_by!(
   price: 352,
   brand: "DW",
   category: "Floor Tom",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/dw-design-acryl-floortom-14-x12-clear_1_DRU0031538-000.jpg",
 )
 
@@ -323,7 +354,8 @@ Product.find_or_create_by!(
   price: 684,
   brand: "Sonor",
   category: "Floor Tom",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/sonor-vintage-series-floortom-14-x12-vintage-pearl_1_DRU0031488-000.jpg",
 )
 
@@ -333,7 +365,8 @@ Product.find_or_create_by!(
   price: 695,
   brand: "Yamaha",
   category: "Floor Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-absolute-maple-hybrid-floortom-18-x16-classic-walnut-wln_1_DRU0030402-000.jpg",
 )
 
@@ -346,7 +379,8 @@ Quick-Lock Tom- and Floor-Tom clamps make the setup and collapse of the drum-set
   price: 944,
   brand: "Tama",
   category: "Floor Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-star-bubinga-floortom-14-x12-dark-green-cordia-cdkg_1_DRU0028406-000.jpg",
 )
 
@@ -358,7 +392,8 @@ Product.find_or_create_by!(
   price: 32,
   brand: "Fame",
   category: "Mounted Tom",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-spark-tom-13-x11-black_1_DRU0034909-000.jpg",
 )
 
@@ -369,7 +404,8 @@ Product.find_or_create_by!(
   price: 71,
   brand: "Pearl",
   category: "Mounted Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-export-exx-tom-12-x8-jet-black-31_1_DRU0028779-000.jpg",
 )
 
@@ -379,7 +415,8 @@ Product.find_or_create_by!(
   price: 75,
   brand: "Pearl",
   category: "Mounted Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-export-exl-tom-13-x9-natural-cherry-246_1_DRU0030971-000.jpg",
 )
 
@@ -389,7 +426,8 @@ Product.find_or_create_by!(
   price: 130,
   brand: "Gretsch",
   category: "Mounted Tom",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/gretsch-catalina-maple-tom-8-x7-aqua-sparkle-as_1_DRU0028880-000.jpg",
 )
 
@@ -399,7 +437,8 @@ Product.find_or_create_by!(
   price: 171,
   brand: "Mapex",
   category: "Mounted Tom",
-  manufactured: "Taiwan",
+  manufacturer: "Taiwan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/mapex-armory-tom-8-x7-emerald-burst_1_DRU0039996-000.jpg",
 )
 
@@ -410,7 +449,8 @@ The shells of the Design Acryl Drums are seamlessly cast and shaped into a solid
   price: 184,
   brand: "DW",
   category: "Mounted Tom",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/dw-design-acryl-tom-8-x7-clear_1_DRU0031537-000.jpg",
 )
 
@@ -420,7 +460,8 @@ Product.find_or_create_by!(
   price: 428,
   brand: "Yamaha",
   category: "Mounted Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-recording-custom-tomtom-10-x9-real-wood_1_DRU0033895-000.jpg",
 )
 
@@ -431,7 +472,8 @@ The main material is maple and a middle layer of wenge wood, a very hard and hea
   price: 446,
   brand: "Yamaha",
   category: "Mounted Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-absolute-maple-hybrid-tom-10-x8-gold-champagne-sparkle_1_DRU0036093-000.jpg",
 )
 
@@ -443,7 +485,8 @@ The tom mounts were also redeveloped and promise minimal stress on the hoops and
   price: 650,
   brand: "Tama",
   category: "Mounted Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-star-bubinga-tom-10-x8-dark-green-cordia-cdkg_1_DRU0028404-000.jpg",
 )
 
@@ -453,7 +496,8 @@ Product.find_or_create_by!(
   price: 660,
   brand: "Yamaha",
   category: "Mounted Tom",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-absolute-maple-hybrid-tom-16-x14-classic-walnut-wln_1_DRU0031109-000.jpg",
 )
 
@@ -465,7 +509,8 @@ Product.find_or_create_by!(
   price: 105,
   brand: "Paiste",
   category: "Cymbal Set",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-101-brass-cymbal-set-essential-14-hihat-18-crash-ride_3_DRU0015331-000.jpg",
 )
 
@@ -475,7 +520,8 @@ Product.find_or_create_by!(
   price: 113,
   brand: "Zildjian",
   category: "Cymbal Set",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/zildjian-planet-z-launch-pack-13-hh-16-cr_1_DRU0039123-000.jpg",
 )
 
@@ -485,7 +531,8 @@ Product.find_or_create_by!(
   price: 130,
   brand: "Zildjian",
   category: "Cymbal Set",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/zildjian-i-family-expression-cymbal-pack-1_1_DRU0039113-000.jpg",
 )
 
@@ -495,7 +542,8 @@ Product.find_or_create_by!(
   price: 158,
   brand: "Paiste",
   category: "Cymbal Set",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-pst8-rock-effects-cymbal-set-10-sp-18-ch_1_DRU0025203-000.jpg",
 )
 
@@ -507,7 +555,8 @@ As with most cymbals in the Meinl line-up, the HCS cymbals are made with help fr
   price: 175,
   brand: "Meinl",
   category: "Cymbal Set",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-hcs-cymbal-set-20-ride-16-crash-14-hihat_1_DRU0013190-000.jpg",
 )
 
@@ -517,7 +566,8 @@ Product.find_or_create_by!(
   price: 1074,
   brand: "Meinl",
   category: "Cymbal Set",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-byzance-cymbal-set-mj401-18-_1_DRU0033441-000.jpg",
 )
 
@@ -527,7 +577,8 @@ Product.find_or_create_by!(
   price: 1033,
   brand: "Meinl",
   category: "Cymbal Set",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-b14161820du-byzance-cymbal-set-dual-complete_1_DRU0040176-000.jpg",
 )
 
@@ -538,7 +589,8 @@ Its balance of stick definition and wash, along with a touch of warmth, produces
   price: 461,
   brand: "Meinl",
   category: "Cymbal Set",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-classics-custom-dark-cymbal-set_1_DRU0032508-000.jpg",
 )
 
@@ -550,7 +602,8 @@ This translucent finish is extremely tough and durable, making it highly resista
   price: 419,
   brand: "Paiste",
   category: "Cymbal Set",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-cs-900-cymbal-set-rock-color-sound-black_1_DRU0035789-000.jpg",
 )
 
@@ -561,7 +614,8 @@ All HCS cymbals are made from an MS63 brass alloy. They are great instruments fo
   price: 352,
   brand: "Meinl",
   category: "Cymbal Set",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-hcs-ultimate-cymbal-set-hcs-scs1_1_DRU0033579-000.jpg",
 )
 
@@ -573,7 +627,8 @@ Product.find_or_create_by!(
   price: 45,
   brand: "Paiste",
   category: "Ride",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-101-brass-crash-ride-18-_1_DRU0010341-000.jpg",
 )
 
@@ -583,7 +638,8 @@ Product.find_or_create_by!(
   price: 105,
   brand: "Paiste",
   category: "Ride",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-pst7-ride-20-_1_DRU0029625-000.jpg",
 )
 
@@ -594,7 +650,8 @@ Product.find_or_create_by!(
   price: 167,
   brand: "Paiste",
   category: "Ride",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-900-series-heavy-ride-20-_1_DRU0035742-000.jpg",
 )
 
@@ -605,7 +662,8 @@ Product.find_or_create_by!(
   price: 175,
   brand: "Paiste",
   category: "Ride",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-cs-900-heavy-ride-20-color-sound-purple_1_DRU0035750-000.jpg",
 )
 
@@ -615,7 +673,8 @@ Product.find_or_create_by!(
   price: 183,
   brand: "Meinl",
   category: "Ride",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-classics-custom-dark-heavy-ride-20-_1_DRU0040376-000.jpg",
 )
 
@@ -626,7 +685,8 @@ Product.find_or_create_by!(
   price: 186,
   brand: "Paiste",
   category: "Ride",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-900-series-ride-22-_1_DRU0035751-000.jpg",
 )
 
@@ -637,7 +697,8 @@ Product.find_or_create_by!(
   price: 192,
   brand: "Zildjian",
   category: "Ride",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/zildjian-gen16-buffed-bronze-ride-20-w-o-pickup_1_DRU0030069-000.jpg",
 )
 
@@ -647,7 +708,8 @@ Product.find_or_create_by!(
   price: 436,
   brand: "Meinl",
   category: "Ride",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-byzance-dark-ride-22-b22dar-dark-finish_1_DRU0022524-000.jpg",
 )
 
@@ -658,7 +720,8 @@ The Paiste Twenty Masters Dark Crisp Ride Cymbal 22 features a CuSn20 bronze con
   price: 453,
   brand: "Paiste",
   category: "Ride",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-twenty-mc-dark-crisp-ride-22-masters-collection_1_DRU0022794-000.jpg",
 )
 
@@ -669,7 +732,8 @@ Product.find_or_create_by!(
   price: 503,
   brand: "Meinl",
   category: "Ride",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-b24pmr-b-byzance-pure-metal-ride-24-chris-adler-signature_2_DRU0035648-000.jpg",
 )
 
@@ -682,7 +746,8 @@ Reflex Series Cymbals are created using a unique Brass Alloy by Turkish percussi
   price: 16,
   brand: "Fame",
   category: "Crash",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-reflex-crash-14-silver-_1_DRU0029548-000.jpg",
 )
 
@@ -692,7 +757,8 @@ Product.find_or_create_by!(
   price: 45,
   brand: "Paiste",
   category: "Crash",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-101-brass-crash-ride-18-_1_DRU0010341-000.jpg",
 )
 
@@ -702,7 +768,8 @@ Product.find_or_create_by!(
   price: 49,
   brand: "Fame",
   category: "Crash",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-noiseless-crash-16-brilliant-_1_DRU0037801-000.jpg",
 )
 
@@ -712,7 +779,8 @@ Product.find_or_create_by!(
   price: 66,
   brand: "Meinl",
   category: "Crash",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-hcs-trash-crash-18-_1_DRU0039299-000.jpg",
 )
 
@@ -722,7 +790,8 @@ Product.find_or_create_by!(
   price: 108,
   brand: "T-Cymbals",
   category: "Crash",
-  manufactured: "Turkey",
+  manufacturer: "Turkey",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0640/t-cymbals-t-natural-medium-crash-15-_1_DRU0038339-000.jpg",
 )
 
@@ -733,7 +802,8 @@ Product.find_or_create_by!(
   price: 110,
   brand: "Meinl",
   category: "Crash",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-classics-custom-crash-16-cc16emc-b-extreme-metal_1_DRU0024667-000.jpg",
 )
 
@@ -744,7 +814,8 @@ Pure Hybrid Series Cymbals are created using B20 Bronze by Turkish percussion sp
   price: 116,
   brand: "Fame",
   category: "Crash",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-pure-hybrid-thin-crash-16-natural-hammered-_1_DRU0037752-000.jpg",
 )
 
@@ -754,7 +825,8 @@ Product.find_or_create_by!(
   price: 158,
   brand: "T-Cymbals",
   category: "Crash",
-  manufactured: "Turkey",
+  manufacturer: "Turkey",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/t-cymbals-punkhead-crash-17-_1_DRU0038354-000.jpg",
 )
 
@@ -764,17 +836,19 @@ Product.find_or_create_by!(
   price: 175,
   brand: "T-Cymbals",
   category: "Crash",
-  manufactured: "Turkey",
+  manufacturer: "Turkey",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/t-cymbals-punkhead-crash-19-_1_DRU0038355-000.jpg",
 )
 
 Product.find_or_create_by!(
   title: "Zildjian K1428 K Custom Special Dry Crash 22",
-  description: "The Zildjian K1428 K Custom Special Dry Crash 22 is a professional crash cymbal from the famous K-Custom series with a dark natural finish and extremely dry sound. The K Custom Special Dry cymbals from Zildjian are made according to an old tradition, but have been adapted to modern requirements. The rustic natural finish and the high-quality B20 bronze make it an absolutely professional cymbal, which is manufactured by hand to the highest quality standards. The sound of the Zildjian Special Dry series is very earthy, dark and dust-dry. The fine hammering results in excellent stick control and a wide range of applications in almost every style of music. Zildjian K Custom has been one of the best on the market for years and is played by numerous professionals.",
+  description: "The Zildjian K1428 K Custom Special Dry Crash 22 is a professional crash cymbal from the famous K-Custom series with a dark natural finish and extremely dry sound. The K Custom Special Dry cymbals from Zildjian are made according to an old tradition, but have been adapted to modern requirements. The rustic natural finish and the high-quality B20 bronze make it an absolutely professional cymbal, which is manufacturer by hand to the highest quality standards. The sound of the Zildjian Special Dry series is very earthy, dark and dust-dry. The fine hammering results in excellent stick control and a wide range of applications in almost every style of music. Zildjian K Custom has been one of the best on the market for years and is played by numerous professionals.",
   price: 444,
   brand: "Zildjians",
   category: "Crash",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/zildjian-k1428-k-custom-special-dry-crash-22-_1_DRU0035687-000.jpg",
 )
 
@@ -786,7 +860,8 @@ Product.find_or_create_by!(
   price: 66,
   brand: "Sabian",
   category: "Hi-Hat",
-  manufactured: "Canada",
+  manufacturer: "Canada",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/sabian-sbr-hihat-13-_1_DRU0030010-000.jpg",
 )
 
@@ -796,7 +871,8 @@ Product.find_or_create_by!(
   price: 100,
   brand: "Paiste",
   category: "Hi-Hat",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-pst5-sound-edge-hihat-14-version-2015_1_DRU0029612-000.jpg",
 )
 
@@ -806,7 +882,8 @@ Product.find_or_create_by!(
   price: 142,
   brand: "Meinl",
   category: "Hi-Hat",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-generation-x-fx-hat-10-gx-10fxh_1_DRU0018211-000.jpg",
 )
 
@@ -817,7 +894,8 @@ Product.find_or_create_by!(
   price: 171,
   brand: "Paiste",
   category: "Hi-Hat",
-  manufactured: "Switzerland",
+  manufacturer: "Switzerland",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/paiste-cs-900-sound-edge-hihat-14-color-sound-blue_1_DRU0035771-000.jpg",
 )
 
@@ -828,7 +906,8 @@ Product.find_or_create_by!(
   price: 186,
   brand: "Zildjian",
   category: "Hi-Hat",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/zildjian-gen16-buffed-bronze-hihat-13-w-o-pickup_1_DRU0030064-000.jpg",
 )
 
@@ -838,7 +917,8 @@ Product.find_or_create_by!(
   price: 495,
   brand: "Meinl",
   category: "Hi-Hat",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-byzance-medium-thin-hihat-16-b16edmth-extra-dry-finish_1_DRU0028805-000.jpg",
 )
 
@@ -849,7 +929,8 @@ Sabian HHX Evolution cymbals are inspired by and collaborated on with Sabian end
   price: 386,
   brand: "Sabian",
   category: "Hi-Hat",
-  manufactured: "Canada",
+  manufacturer: "Canada",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/sabian-hhx-evolution-hihat-14-brilliant_1_DRU0008493-000.jpg",
 )
 
@@ -859,7 +940,8 @@ Product.find_or_create_by!(
   price: 402,
   brand: "Meinl",
   category: "Hi-Hat",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/meinl-byzance-dual-hihat-15-b15duh-extra-dry_1_DRU0031622-000.jpg",
 )
 
@@ -871,7 +953,8 @@ Product.find_or_create_by!(
   price: 42,
   brand: "Fame",
   category: "Single Pedal",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-fp9000-kick-pedal-_1_DRU0003897-000.jpg",
 )
 
@@ -882,7 +965,8 @@ Ideal for entry level and working drummers alike the 2000 series from DW offers 
   price: 75,
   brand: "DW",
   category: "Single Pedal",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/dw-kick-pedal-2000-_1_DRU0020825-000.jpg",
 )
 
@@ -892,7 +976,8 @@ Product.find_or_create_by!(
   price: 77,
   brand: "Ortega",
   category: "Single Pedal",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/ortega-cajon-pedal-ocjp-gb-inkl-bag_1_DRU0034037-000.jpg",
 )
 
@@ -904,7 +989,8 @@ In its efforts to expand the boundaries of this original design, TAMA has contin
   price: 157,
   brand: "Tama",
   category: "Single Pedal",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-power-glide-single-pedal-hp900pn_1_DRU0033444-000.jpg",
 )
 
@@ -914,7 +1000,8 @@ Product.find_or_create_by!(
   price: 184,
   brand: "Rogers",
   category: "Single Pedal",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/rogers-rp100-dyno-matic-einzelpedal_1_DRU0039030-000.jpg",
 )
 
@@ -924,7 +1011,8 @@ Product.find_or_create_by!(
   price: 377,
   brand: "Sonor",
   category: "Single Pedal",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0640/sonor-giant-step-kick-pedal-gsp3-_1_DRU0013476-000.jpg",
 )
 
@@ -934,7 +1022,8 @@ Product.find_or_create_by!(
   price: 486,
   brand: "DW",
   category: "Single Pedal",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/dw-kick-pedal-direct-drive-_1_DRU0029637-000.jpg",
 )
 
@@ -944,7 +1033,8 @@ Product.find_or_create_by!(
   price: 515,
   brand: "Axis",
   category: "Single Pedal",
-  manufactured: "Sweden",
+  manufacturer: "Sweden",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/axis-percussion-a-770-single-pedal_1_DRU0037837-000.jpg",
 )
 
@@ -956,7 +1046,8 @@ Product.find_or_create_by!(
   price: 100,
   brand: "Fame",
   category: "Double Pedal",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-dfp9001-double-pedal-_1_DRU0011072-000.jpg",
 )
 
@@ -966,7 +1057,8 @@ Product.find_or_create_by!(
   price: 171,
   brand: "Fame",
   category: "Double Pedal",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-doppelpedal-dfp-one-chain-drive_1_DRU0039127-000.jpg",
 )
 
@@ -976,7 +1068,8 @@ Product.find_or_create_by!(
   price: 301,
   brand: "Pearl",
   category: "Double Pedal",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-p-2052c-eliminator-redline-double-pedal_1_DRU0034161-000.jpg",
 )
 
@@ -987,7 +1080,8 @@ The Iron Cobra achieved its legendary status because of its ability to strongly 
   price: 373,
   brand: "Tama",
   category: "Double Pedal",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-hp900pwln-iron-cobra-left_1_DRU0033448-000.jpg",
 )
 
@@ -998,7 +1092,8 @@ The DFP9C Double Foot Pedal employs a Double Chain Drive and provides users the 
   price: 502,
   brand: "Yamaha",
   category: "Double Pedal",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/yamaha-dfp9c-double-foot-pedal-double-chain-drive-_1_DRU0038100-000.jpg",
 )
 
@@ -1008,7 +1103,8 @@ Product.find_or_create_by!(
   price: 637,
   brand: "Sonor",
   category: "Double Pedal",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/sonor-gdpr3-double-pedal-giant-step-_1_DRU0008447-000.jpg",
 )
 
@@ -1018,7 +1114,8 @@ Product.find_or_create_by!(
   price: 688,
   brand: "Axis",
   category: "Double Pedal",
-  manufactured: "Sweden",
+  manufacturer: "Sweden",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/axis-percussion-a-702-double-pedal_1_DRU0037840-000.jpg",
 )
 
@@ -1029,7 +1126,8 @@ Not a single millimetre of this futuristic, breath-taking instrument is left to 
   price: 1007,
   brand: "DW",
   category: "Double Pedal",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/dw-double-pedal-direct-drive-_1_DRU0029638-000.jpg",
 )
 
@@ -1041,7 +1139,8 @@ Product.find_or_create_by!(
   price: 2,
   brand: "Music store",
   category: "Drumsticks",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/music-store-5a-maple-sticks-wood-tip_1_DRU0014055-000.jpg",
 )
 
@@ -1051,7 +1150,8 @@ Product.find_or_create_by!(
   price: 3,
   brand: "Music store",
   category: "Drumsticks",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/music-store-5b-sticks-hornbeam-wood-tip_1_DRU0010836-000.jpg",
 )
 
@@ -1061,7 +1161,8 @@ Product.find_or_create_by!(
   price: 5,
   brand: "Vic-Firth",
   category: "Drumsticks",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/vic-firth-nova-drum-sticks-7ab-wood-tip_1_DRU0031224-000.jpg",
 )
 
@@ -1071,7 +1172,8 @@ Product.find_or_create_by!(
   price: 8,
   brand: "Los Cabos",
   category: "Drumsticks",
-  manufactured: "Mexico",
+  manufacturer: "Mexico",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/los-cabos-5a-red-hickory-sticks-wood-tip_1_DRU0018946-000.jpg",
 )
 
@@ -1081,7 +1183,8 @@ Product.find_or_create_by!(
   price: 13,
   brand: "Vic-Firth",
   category: "Drumsticks",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/vic-firth-vic-grip-sticks-7avg-american-classic-wood-tip_1_DRU0031266-000.jpg",
 )
 
@@ -1091,7 +1194,8 @@ Product.find_or_create_by!(
   price: 14,
   brand: "Pro-mark",
   category: "Drumsticks",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pro-mark-mike-portnoy-activegrip-420x_1_DRU0034642-000.jpg",
 )
 
@@ -1101,7 +1205,8 @@ Product.find_or_create_by!(
   price: 16,
   brand: "Ice-Stix",
   category: "Drumsticks",
-  manufactured: "Germany",
+  manufacturer: "Germany",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/ice-stix-uv-light-sticks-5a-yellow_4_DRU0037310-000.jpg",
 )
 
@@ -1114,7 +1219,8 @@ Product.find_or_create_by!(
   price: 13,
   brand: "Ahead",
   category: "Drum throne",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/ahead-armor-cases-cover-for-drum-throne-aa9024_1_DRU0026035-000.jpg",
 )
 
@@ -1124,7 +1230,8 @@ Product.find_or_create_by!(
   price: 46,
   brand: "Fame",
   category: "Drum throne",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-drum-throne-d8020_1_DRU0028889-000.jpg",
 )
 
@@ -1135,7 +1242,8 @@ The Mapex T575A has a 4-inch thick foam pad, a solid steel rod with threaded tub
   price: 75,
   brand: "Mapex",
   category: "Drum throne",
-  manufactured: "Taiwan",
+  manufacturer: "Taiwan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/mapex-drum-throne-t575a-saddle_1_DRU0027658-000.jpg",
 )
 
@@ -1145,7 +1253,8 @@ Product.find_or_create_by!(
   price: 92,
   brand: "Fame",
   category: "Drum throne",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-drum-throne-d9003_1_DRU0016389-000.jpg",
 )
 
@@ -1155,7 +1264,8 @@ Product.find_or_create_by!(
   price: 167,
   brand: "Ahead",
   category: "Drum throne",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/ahead-spinal-glide-throne-spg-r-4-red_1_DRU0037503-000.jpg",
 )
 
@@ -1165,7 +1275,8 @@ Product.find_or_create_by!(
   price: 264,
   brand: "DW",
   category: "Drum throne",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/dw-drumhocker-9120al-airlift_1_DRU0037601-000.jpg",
 )
 
@@ -1176,7 +1287,8 @@ Manufacturer: PearlMin. Height (mm): 495Maximum Height (mm): 665Finish: Chrome-P
   price: 292,
   brand: "Pearl",
   category: "Drum throne",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-d-3500br-roadster-drum-throne_3_DRU0040009-000.jpg",
 )
 
@@ -1188,7 +1300,8 @@ Product.find_or_create_by!(
   price: 15,
   brand: "Music store",
   category: "Drum Pad",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/music-store-practice-pad-7-_1_DRU0009065-000.jpg",
 )
 
@@ -1198,7 +1311,8 @@ Product.find_or_create_by!(
   price: 20,
   brand: "Evans",
   category: "Drum Pad",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/evans-practice-pad-real-feel-rf-6gm-6-one-sided_1_DRU0005833-000.jpg",
 )
 
@@ -1208,7 +1322,8 @@ Product.find_or_create_by!(
   price: 26,
   brand: "Evans",
   category: "Drum Pad",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/evans-practice-pad-rf-stand-set_1_DRU972.jpg",
 )
 
@@ -1218,7 +1333,8 @@ Product.find_or_create_by!(
   price: 45,
   brand: "Tama",
   category: "Drum Pad",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/tama-practice-pad-tdp7s-buzz-maker-7-with-snaresound_1_DRU0022301-000.jpg",
 )
 
@@ -1228,7 +1344,8 @@ Product.find_or_create_by!(
   price: 71,
   brand: "Rtom",
   category: "Drum Pad",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/rtom-blkhol14-practice-pad-black-hole-14-_1_DRU0039669-000.jpg",
 )
 
@@ -1238,7 +1355,8 @@ Product.find_or_create_by!(
   price: 42,
   brand: "Fame",
   category: "Drum Pad",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-padronome-practice-pad_1_DRU0035465-000.jpg",
 )
 # Drum Accessories
@@ -1250,7 +1368,8 @@ The new DB-90 is loaded with quality sounds and drum patterns to make your pract
   price: 122,
   brand: "Boss",
   category: "Drum Accessory",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/boss-db-90-dr-beat-digital-metronom-midi-slot_1_DRU0010320-000.jpg",
 )
 
@@ -1260,7 +1379,8 @@ Product.find_or_create_by!(
   price: 7,
   brand: "Fame",
   category: "Drum Accessory",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-fm-01b-metronom_2_ACC0006617-000.jpg",
 )
 
@@ -1270,7 +1390,8 @@ Product.find_or_create_by!(
   price: 1899,
   brand: "Audix",
   category: "Drum Accessory",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/audix-dp8-elite-pack-drum-case_1_PAH0006110-000.jpg",
 )
 
@@ -1280,7 +1401,8 @@ Product.find_or_create_by!(
   price: 83,
   brand: "Fame",
   category: "Drum Accessory",
-  manufactured: "China",
+  manufacturer: "China",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/fame-drum-microphone-set-practice-7-piece_1_DRU0028985-000.jpg",
 )
 
@@ -1290,7 +1412,8 @@ Product.find_or_create_by!(
   price: 1,
   brand: "Drumdial",
   category: "Drum Accessory",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/music-store-drum-key-_1_DRU0003987-000.jpg",
 )
 
@@ -1300,7 +1423,8 @@ Product.find_or_create_by!(
   price: 17,
   brand: "Pearl",
   category: "Drum Accessory",
-  manufactured: "Japan",
+  manufacturer: "Japan",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/pearl-tech-tool-ptt13_1_DRU0034749-000.jpg",
 )
 
@@ -1310,7 +1434,8 @@ Product.find_or_create_by!(
   price: 63,
   brand: "Drumdial",
   category: "Drum Accessory",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/drum-dial-drum-tuner-stimmgeraet-_2_DRU0015904-000.jpg",
 )
 
@@ -1320,7 +1445,8 @@ Product.find_or_create_by!(
   price: 25,
   brand: "Vic-Firth",
   category: "Drum Accessory",
-  manufactured: "USA",
+  manufacturer: "USA",
+  year: rand(2000..2021),
   image: "https://images.musicstore.de/images/0960/vic-firth-db22-hearing-protection-volume-reduction_1_DRU0012786-000.jpg",
 )
 
