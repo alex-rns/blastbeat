@@ -1,9 +1,9 @@
 .card {
-  .card-title {
+  &-title {
     min-height: 45px;
     font-size: 1.1em;
   }
-  .card-text {
+  &-text {
     min-height: 70px;
     font-size: 0.8em;
   }

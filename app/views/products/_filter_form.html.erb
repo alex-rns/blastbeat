@@ -2,10 +2,11 @@
 
 <%= form_with url: products_path, method: :get do |f| %>
 
-  <%= f.submit "Filter", class: "w-100" %>
+  <%= f.submit "Filter", class: "w-100 btn btn-outline-secondary btn-lg" %>
+  <%= link_to "Clear", home_path, class: "btn w-100 btn-secondary mt-2" %>
 
-  <%= render partial: 'number_sort', locals: { f: f, attr: :price} %>
-  <%= render partial: 'number_sort', locals: { f: f, attr: :year} %>
+  <%= render partial: 'number_sort', locals: { f: f, attr: :price } %>
+  <%= render partial: 'number_sort', locals: { f: f, attr: :year } %>
 
   <div class="row">
     <div class="col-6">

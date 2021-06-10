@@ -1,4 +1,16 @@
 <div class="container">
+
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h5><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h5>
+      <ul class="list-unstyled">
+        <% @product.errors.each do |error| %>
+          <li class="alert alert-danger"><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <h2>Create new product</h2>
   <%= form_with model: @product do |f| %>
     <div class="field py-2">
