@@ -1,0 +1,33 @@
+<%= form_with model: @product do |f| %>
+  <div class="field py-2">
+    <%= f.label :title, class: "pb-2" %>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+  <div class="py-2">
+    <%= f.label :description, class: "pb-2" %>
+    <%= f.text_area :description, class: "form-control" %>
+  </div>
+  <div class="py-2">
+    <%= f.label :price, class: "pb-2" %>
+    <%= f.number_field :price, class: "form-control" %>
+  </div>
+  <div class="py-2">
+    <%= f.label :category, class: "pb-2" %>
+    <%= f.text_field :category, class: "form-control" %>
+  </div>
+  <div class="py-2">
+    <%= f.label :brand, class: "pb-2" %>
+    <%= f.text_field :brand, class: "form-control" %>
+  </div>
+  <div class="py-2">
+    <%= f.label :manufacturer, class: "pb-2" %>
+    <%= f.text_field :manufacturer, class: "form-control" %>
+  </div>
+  <div class="py-2">
+    <%= f.label :year, class: "pb-2" %>
+    <%= f.number_field :year, class: "form-control" %>
+  </div>
+  <div class="py-2">
+    <%= f.submit(class: "btn btn-success") %>
+  </div>
+<% end %>
