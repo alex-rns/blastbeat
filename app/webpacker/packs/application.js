@@ -8,9 +8,11 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels")
 require("bootstrap")
+window.$ = require("jquery")
 
 const images = require.context("../src/images", true)
 const imagePath = (name) => images(name, true)
 window.imagePath = imagePath
 
 import "stylesheets/application"
+import "javascripts/products/form"
