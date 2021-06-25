@@ -8,7 +8,7 @@ require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels")
 require("bootstrap")
-window.$ = require("jquery")
+require("jquery")
 
 const images = require.context("../src/images", true)
 const imagePath = (name) => images(name, true)

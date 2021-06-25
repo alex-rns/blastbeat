@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# :nodoc:
 class FilterProductsQuery
   def initialize(products, params)
     @products = products

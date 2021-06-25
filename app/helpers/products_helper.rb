@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# :nodoc:
 module ProductsHelper
   def checked?(value, att)
     params[att].present? && params[att].include?(value.object.try(att))

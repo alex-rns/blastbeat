@@ -10,11 +10,8 @@
 
   <div class="row">
     <div class="col-6">
-
       <h4>Brand</h4>
-
       <%= f.collection_check_boxes :brand, uniq_brand, :brand, :brand do |b| %>
-
         <div>
           <%= b.check_box checked: checked?(b, :brand) %>
           <%= b.label %>
@@ -22,9 +19,7 @@
       <% end %>
     </div>
     <div class="col-6">
-
       <h4>Category</h4>
-
       <%= f.collection_check_boxes :category, uniq_category, :category, :category do |b| %>
         <div>
           <%= b.check_box checked: checked?(b, :category) %>
@@ -33,9 +28,7 @@
       <% end %>
     </div>
     <div class="col-6">
-
       <h4>Manufacturer</h4>
-
       <%= f.collection_check_boxes :manufacturer, uniq_manufacturer, :manufacturer, :manufacturer do |b| %>
         <div>
           <%= b.check_box checked: checked?(b, :manufacturer) %>
@@ -46,5 +39,4 @@
   </div>
 
   <%= f.submit "Filter", class: "w-100" %>
-
 <% end %>
