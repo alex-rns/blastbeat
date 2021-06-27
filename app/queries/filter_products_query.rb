@@ -20,6 +20,7 @@ class FilterProductsQuery
 
   private
 
+  # If none of the collection checked - selected the whole collection
   def sort_collection(collection, key)
     if @params[key].all?(&:blank?)
       collection
