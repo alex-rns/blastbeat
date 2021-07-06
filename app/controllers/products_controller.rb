@@ -17,12 +17,12 @@ class ProductsController < ApplicationController
     respond_with(@products)
   end
 
+  def edit; end
+
   def create
     @product = Product.create(product_params)
     respond_with(@product)
   end
-
-  def edit; end
 
   def update
     @product.update(product_params)
