@@ -1,135 +1,86 @@
+# frozen_string_literal: true
+
 require 'swagger_helper'
 
 RSpec.describe 'api/v1/products_controller', type: :request do
-
   path '/api/v1/products' do
+    get 'List products' do
+      tags 'Products'
+      consumes 'application/json'
+      parameter name: :min_price, in: :query
+      parameter name: :max_price, in: :query
+      parameter name: :brand, in: :query
+      parameter name: :category, in: :query
+      parameter name: :manufacturer, in: :query
 
-    get('list products') do
       response(200, 'successful') do
-
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
         run_test!
       end
     end
 
-    post('create product') do
-      response(200, 'successful') do
+    post 'Create product' do
+      tags 'Products'
+      consumes 'application/json'
+      parameter name: :product, in: :body, schema: {
+        type: :object,
+        properties: {
+          title: { type: :string }
+        },
+        required: %i[title]
+      }
 
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
-        run_test!
-      end
-    end
-  end
-
-  path '/api/v1/products/new' do
-
-    get('new product') do
-      response(200, 'successful') do
-
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
-        run_test!
-      end
-    end
-  end
-
-  path '/api/v1/products/{id}/edit' do
-    # You'll want to customize the parameter types...
-    parameter name: 'id', in: :path, type: :string, description: 'id'
-
-    get('edit product') do
-      response(200, 'successful') do
-        let(:id) { '123' }
-
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
+      response(201, 'successful') do
         run_test!
       end
     end
   end
 
   path '/api/v1/products/{id}' do
-    # You'll want to customize the parameter types...
-    parameter name: 'id', in: :path, type: :string, description: 'id'
+    get 'Show product' do
+      tags 'Products'
+      consumes 'application/json'
+      parameter name: :id,
+                in: :path,
+                type: :integer,
+                description: 'Product id'
 
-    get('show product') do
       response(200, 'successful') do
-        let(:id) { '123' }
-
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
         run_test!
       end
     end
 
-    patch('update product') do
-      response(200, 'successful') do
-        let(:id) { '123' }
+    put 'Update product' do
+      tags 'Products'
+      consumes 'application/json'
+      parameter name: :id, in: :path, type: :integer
+      parameter name: :product, in: :body, schema: {
+        type: :object,
+        properties: {
+          title: { type: :string },
+          description: { type: :string },
+          price: { type: :integer },
+          category: { type: :string },
+          brand: { type: :string },
+          manufacturer: { type: :string },
+          year: { type: :integer }
+        },
+        required: %i[title description price category brand manufacturer year]
+      }
 
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
+      response(200, 'successful') do
         run_test!
       end
     end
 
-    put('update product') do
+    delete 'Delete product' do
+      tags 'Products'
+      consumes 'application/json'
+      parameter name: :id,
+                in: :path,
+                type: :integer,
+                description: 'Product id'
+
       response(200, 'successful') do
-        let(:id) { '123' }
-
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
-        run_test!
-      end
-    end
-
-    delete('delete product') do
-      response(200, 'successful') do
-        let(:id) { '123' }
-
-        after do |example|
-          example.metadata[:response][:content] = {
-            'application/json' => {
-              example: JSON.parse(response.body, symbolize_names: true)
-            }
-          }
-        end
         run_test!
       end
     end

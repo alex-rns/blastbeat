@@ -6,64 +6,113 @@ info:
 paths:
   "/api/v1/products":
     get:
-      summary: list products
+      summary: List products
+      tags:
+      - Products
+      parameters:
+      - name: min_price
+        in: query
+      - name: max_price
+        in: query
+      - name: brand
+        in: query
+      - name: category
+        in: query
+      - name: manufacturer
+        in: query
       responses:
         '200':
           description: successful
     post:
-      summary: create product
+      summary: Create product
+      tags:
+      - Products
+      parameters: []
       responses:
-        '200':
+        '201':
           description: successful
-  "/api/v1/products/new":
-    get:
-      summary: new product
-      responses:
-        '200':
-          description: successful
-  "/api/v1/products/{id}/edit":
-    parameters:
-    - name: id
-      in: path
-      description: id
-      required: true
-      schema:
-        type: string
-    get:
-      summary: edit product
-      responses:
-        '200':
-          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+              required:
+              - title
   "/api/v1/products/{id}":
-    parameters:
-    - name: id
-      in: path
-      description: id
-      required: true
-      schema:
-        type: string
     get:
-      summary: show product
-      responses:
-        '200':
-          description: successful
-    patch:
-      summary: update product
+      summary: Show product
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        description: Product id
+        required: true
+        schema:
+          type: integer
       responses:
         '200':
           description: successful
     put:
-      summary: update product
+      summary: Update product
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
       responses:
         '200':
           description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                description:
+                  type: string
+                price:
+                  type: integer
+                category:
+                  type: string
+                brand:
+                  type: string
+                manufacturer:
+                  type: string
+                year:
+                  type: integer
+              required:
+              - title
+              - description
+              - price
+              - category
+              - brand
+              - manufacturer
+              - year
     delete:
-      summary: delete product
+      summary: Delete product
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        description: Product id
+        required: true
+        schema:
+          type: integer
       responses:
         '200':
           description: successful
 servers:
-- url: https://{defaultHost}
+- url: http://localhost:3000
   variables:
     defaultHost:
-      default: www.example.com
+      default: localhost:3000

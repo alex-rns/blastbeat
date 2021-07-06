@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   root 'products#index', as: 'home'
   resources :products
 
-  # namespace 'api' do
-  #   namespace 'v1' do
-  #     resources :products
-  #   end
-  # end
+  namespace 'api' do
+    namespace 'v1' do
+      resources :products
+    end
+  end
 end
