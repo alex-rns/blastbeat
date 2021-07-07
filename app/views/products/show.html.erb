@@ -14,7 +14,9 @@
       <p class="pl-3">Description: <%= @product.description if @product.description.present? %></p>
       <p class="pl-3">Brand: <%= @product.brand %></p>
       <p class="pl-3">Manufacturer: <%= @product.manufacturer %></p>
-      <p class="pl-3 bg-<%= presenter.new_product_marker %>">Year: <%= @product.year if @product.year.present? %></p>
+      <p class="pl-3 bg-<%= presenter.new_product_marker %>">
+        <%= "Year: #{@product.year.to_s}" if @product.year.present? %>
+      </p>
     </div>
   </div>
 
