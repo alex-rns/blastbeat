@@ -3,6 +3,7 @@
 require 'rails_helper'
 
 RSpec.feature 'Product', type: :feature do
+  let!(:product) { create(:product) }
   scenario 'creating successfully' do
     expect(Product.count).to eql(1)
     visit new_product_path
@@ -14,7 +15,7 @@ RSpec.feature 'Product', type: :feature do
     fill_in 'Manufacturer', with: 'Manufacturer'
     click_button 'Create Product'
     expect(Product.count).to eq(2)
-    expect(Product.first.title).to eq('test-title')
+    expect(Product.first.title).to eq('Title 1')
     expect(Product.last.title).to eq('ValidTitle')
   end
 
