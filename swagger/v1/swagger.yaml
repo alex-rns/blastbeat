@@ -1,0 +1,118 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/products":
+    get:
+      summary: List products
+      tags:
+      - Products
+      parameters:
+      - name: min_price
+        in: query
+      - name: max_price
+        in: query
+      - name: brand
+        in: query
+      - name: category
+        in: query
+      - name: manufacturer
+        in: query
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Create product
+      tags:
+      - Products
+      parameters: []
+      responses:
+        '201':
+          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+              required:
+              - title
+  "/api/v1/products/{id}":
+    get:
+      summary: Show product
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        description: Product id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: Update product
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                description:
+                  type: string
+                price:
+                  type: integer
+                category:
+                  type: string
+                brand:
+                  type: string
+                manufacturer:
+                  type: string
+                year:
+                  type: integer
+              required:
+              - title
+              - description
+              - price
+              - category
+              - brand
+              - manufacturer
+              - year
+    delete:
+      summary: Delete product
+      tags:
+      - Products
+      parameters:
+      - name: id
+        in: path
+        description: Product id
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: successful
+servers:
+- url: http://localhost:3000
+  variables:
+    defaultHost:
+      default: localhost:3000

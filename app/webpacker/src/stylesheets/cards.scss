@@ -1,0 +1,10 @@
+.card {
+  &-title {
+    min-height: 45px;
+    font-size: 1.1em;
+  }
+  &-text {
+    min-height: 70px;
+    font-size: 0.8em;
+  }
+}
