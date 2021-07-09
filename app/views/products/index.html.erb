@@ -5,7 +5,19 @@
     </div>
     <div class="col-8">
       <div class="row g-0">
-        <%= render @products %>
+        <% cache ["product_list", @products] do %>
+          <%= render @products %>
+        <% end %>
+
+        <h2>Test N+1 block</h2>
+        <ul>
+          <% @products.each do |product| %>
+            <li><%= product.title %></li>
+<!--            <li><%#= product.comments.map(&:body) %></li>-->
+<!--            <li><%#= product.comments.size %></li>-->
+          <% end %>
+        </ul>
+
       </div>
     </div>
   </div>

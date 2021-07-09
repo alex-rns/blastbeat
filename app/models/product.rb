@@ -2,6 +2,8 @@
 
 # :nodoc:
 class Product < ApplicationRecord
+  has_many :comments
+
   validates :title, :price, :category, :brand, :manufacturer, presence: true
   validates :title, :category, :brand, length: { in: 2..20 }
   validates :price, numericality: { only_integer: true }
