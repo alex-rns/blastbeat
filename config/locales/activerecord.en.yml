@@ -1,0 +1,99 @@
+en:
+  activerecord:
+    errors:
+      messages:
+        extension_white_list_error: "Please choose .jpeg or .png file"
+        related_object_exists: "You can't delete this %{model_name} %{title} because it has %{objects} that belong to it."
+        not_found: &not_found "%{model_name} not found"
+        incorrect_csv: "Should be csv format"
+        access_restricted: "Access restricted"
+        forbidden: "Forbidden"
+      sessions:
+        incorrect_data: &incorrect_data "Incorrect email or password"
+        incorrect_email: "Please enter a valid email address"
+        incorrect_password: "Please enter a password"
+        already_registered: "Already registered"
+      users:
+        current_password:
+          blank: "Current password can't be blank"
+          invalid: "Current password incorrect"
+        password:
+          blank: "Password can't be blank"
+      models:
+        company:
+          attributes:
+            title:
+              blank: &required_value "This value is required"
+            address:
+              blank: *required_value
+            city:
+              blank: *required_value
+            state:
+              blank: *required_value
+            postal_code:
+              blank: *required_value
+            country:
+              blank: *required_value
+        user:
+          attributes:
+            email:
+              blank: "Please enter a valid email address"
+              invalid_email_format: "This value should be a valid email"
+              taken: *incorrect_data
+            first_name:
+              blank: "Please enter a first name"
+            last_name:
+              blank: "Please enter a last name"
+            phone_number:
+              blank: *required_value
+            password:
+              blank: "Please enter a password"
+              too_short: &incorrect_password "Your password must contain at least 8 characters including one uppercase and lowercase letter and one number digit"
+              invalid: *incorrect_password
+            position_id:
+              blank: 'Please choose a position'
+            company_office_id:
+              blank: 'Please choose office'
+            department_id:
+              blank: 'Please choose a department'
+        survey:
+          already_exists: Survey already finished
+        user_meeting:
+          not_found: *not_found
+        meeting:
+          attributes:
+            base:
+              remove_denied: "You can't delete this meeting because it has survey responses"
+              all_day: "You can't use both options: all_day and start/end time"
+              meeting_time: "Please choose a correct time "
+              invalid_facilitator: 'User is blocked'
+        department:
+          attributes:
+            base:
+              invalid_company_office: &invalid_company_office Chosen company office belongs to another company(%{company_title})
+              invalid_head_of_department: Chosen head of department belongs to another company(%{company_title})
+            title:
+              blank: *required_value
+            head_of_department:
+              required: *required_value
+        team:
+          attributes:
+            base:
+              invalid_company_office: *invalid_company_office
+              invalid_team_lead: Chosen team lead belongs to another company(%{company_title})
+            title:
+              blank: *required_value
+            team_lead:
+              required: *required_value
+        position:
+          attributes:
+            title:
+              blank: *required_value
+        company_office:
+          attributes:
+            title:
+              blank: *required_value
+            country:
+              blank: *required_value
+            city:
+              blank: *required_value

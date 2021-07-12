@@ -49,6 +49,14 @@
           <%= link_to "Create new product", new_product_path, class: "nav-link" %>
         </li>
       </ul>
+      <div>
+        <% if user_signed_in? %>
+          <span>You are logged in, <%= current_user.email %></span>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign in", new_user_session_path %>
+        <% end %>
+      </div>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -56,6 +64,10 @@
     </div>
   </div>
 </nav>
+<div>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</div>
 <%= yield %>
 </body>
 </html>
