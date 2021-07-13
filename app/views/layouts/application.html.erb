@@ -51,7 +51,7 @@
       </ul>
       <div>
         <% if user_signed_in? %>
-          <span>You are logged in, <%= current_user.email %></span>
+          <span>You are logged in, <%= UserPresenter.new(current_user).username %></span>
           <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
         <% else %>
           <%= link_to "Sign in", new_user_session_path %>
