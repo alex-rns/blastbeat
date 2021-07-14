@@ -18,4 +18,8 @@ class ApplicationController < ActionController::Base
       @user = User.find_by(authentication_token: token)
     end
   end
+
+  def redirect_if_no_admin
+    redirect_to home_path unless current_user.admin?
+  end
 end

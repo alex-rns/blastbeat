@@ -1,4 +1,4 @@
-<%= form_with model: @product do |f| %>
+<%= form_with model: [:backend, @product] do |f| %>
   <div class="field py-2">
     <%= f.label :title, class: "pb-2" %>
     <%= f.text_field :title, class: "form-control" %>
