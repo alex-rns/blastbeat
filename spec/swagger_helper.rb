@@ -3,6 +3,13 @@
 require 'rails_helper'
 
 RSpec.configure do |config|
+  config.after(:example) do |example|
+    if respond_to?(:response) && response.content_type == 'application/json' &&
+      example.metadata.key?(:rerun_file_path) && example.metadata[:rerun_file_path] =~ %r{spec/requests/api/v1}
+      example.metadata[:response][:examples] = { 'application/json' => JSON.parse(response.body,
+                                                                                  symbolize_names: true) }
+    end
+  end
   # Specify a root folder where Swagger JSON files are generated
   # NOTE: If you're using the rswag-api to serve API descriptions, you'll need
   # to ensure that it's configured to serve Swagger from the same folder
@@ -21,7 +28,7 @@ RSpec.configure do |config|
         title: 'API V1',
         version: 'v1'
       },
-      paths: {},
+      basePath: '/api/v1/',
       servers: [
         {
           url: 'http://localhost:3000',
@@ -31,7 +38,17 @@ RSpec.configure do |config|
             }
           }
         }
-      ]
+      ],
+      components: {
+        securitySchemes: {
+          ApiKeyAuth: {
+            type: :apiKey,
+            name: 'Authorization',
+            in: :header,
+            description: 'Bearer {token}'
+          }
+        }
+      }
     }
   }
 

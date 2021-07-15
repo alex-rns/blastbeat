@@ -32,6 +32,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'rswag-api'
 gem 'rswag-ui'
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'devise'
+gem 'simple_token_authentication', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -63,6 +65,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
   gem 'rswag-specs'
   gem 'factory_bot_rails'
+  gem 'bullet'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
