@@ -19,6 +19,6 @@ Rails.application.routes.draw do
     end
   end
   namespace :backend do
-    resources :products, only: %i[new edit create update destroy]
+    resources :products, except: %i[index show]
   end
 end
