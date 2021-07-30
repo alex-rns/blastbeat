@@ -5,8 +5,7 @@ module Api
     # :nodoc:
     class CommentsController < ApplicationController
       def index
-        @comments = Comment.all
-        render json: @comments, message: 'Comment list', status: :ok
+        render json: Comment.all, message: 'Comment list', status: :ok
       end
     end
   end

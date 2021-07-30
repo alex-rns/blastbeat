@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
   root 'products#index', as: 'home'
-  resources :products
+  resources :products, only: %i[index show]
 
   namespace :api do
     namespace :v1 do
@@ -17,5 +17,8 @@ Rails.application.routes.draw do
       end
       resources :products
     end
+  end
+  namespace :backend do
+    resources :products, except: %i[index show]
   end
 end
