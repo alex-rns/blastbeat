@@ -34,6 +34,11 @@ gem 'rswag-ui'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'devise'
 gem 'simple_token_authentication', '~> 1.0'
+#Payments infrastructure for the internet
+# Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.
+# Start now
+# Contact sales
+gem 'stripe'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

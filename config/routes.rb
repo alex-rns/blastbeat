@@ -6,7 +6,15 @@ Rails.application.routes.draw do
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
   root 'products#index', as: 'home'
+
   resources :products, only: %i[index show]
+  resources :payments, only: %i[new create]
+  resources :subscriptions, only: %i[new create]
+
+  post 'checkout/stripe_side_payment', to: 'checkout#stripe_side_payment'
+  post 'checkout/create', to: 'checkout#create'
+  get 'checkout/success', to: 'checkout#success'
+  get 'checkout/cancel', to: 'checkout#cancel'
 
   namespace :api do
     namespace :v1 do

@@ -3,10 +3,12 @@
 <head>
   <title>Blastbeat</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://js.stripe.com/v3/"></script>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 </head>
 
 <body>
@@ -52,6 +54,7 @@
       </ul>
       <div>
         <% if user_signed_in? %>
+          <%= link_to "Subscribe", new_subscription_path %>
           <span>You are logged in, <%= UserPresenter.new(current_user).username %></span>
           <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
         <% else %>
