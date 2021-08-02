@@ -2,7 +2,6 @@
 
 # :nodoc:
 class CheckoutController < ApplicationController
-
   def stripe_side_payment
     @product = Product.find(params[:id])
     @session = Stripe::Checkout::Session.create(
