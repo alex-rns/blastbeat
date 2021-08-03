@@ -6,17 +6,9 @@ class SubscriptionsController < ApplicationController
 
   def create
     customer = Stripe::Customer.create(email: current_user.email)
-    token = Stripe::Token.create(card: { number: params[:number],
-                                         exp_month: params[:exp_month],
-                                         exp_year: params[:exp_year],
-                                         cvc: params[:cvc] })
+    token = CreateStripeTokenService.new(params).call
     Stripe::Customer.create_source(customer.id, { source: token.id })
-    Stripe::Subscription.create({
-                                  customer: customer,
-                                  items: [
-                                    { price: params[:subscription_price] }
-                                  ]
-                                })
+    CreateStripeSubscriptionService.new(params, customer).call
     redirect_to checkout_success_url(title: 'subscription')
   end
 end
