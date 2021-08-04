@@ -1,0 +1,22 @@
+<div class="container mb-5">
+  <h1 class="text-center mb-5">Subscription Page</h1>
+  <div class="col-5 border border-3 rounded-3 p-3">
+    <%= form_with url: subscriptions_path do |f| %>
+      <div class="text-center b border-bottom mb-3 pb-3">
+        <%= f.radio_button :subscription_price, "price_1JFHoeDCv5LTlrYTKLTPlDFc" %>
+        <%= f.label :subscription_price, "Premium" %>
+        <%= f.radio_button :subscription_price, "price_1JIw2JDCv5LTlrYTIFeH7v6r" %>
+        <%= f.label :subscription_price, "All inclusive" %>
+      </div>
+      <%= f.label :number, "Card number" %>
+      <%= f.number_field :number, class: 'form-control', value: '4242424242424242' %>
+      <%= f.label :CVC, "cvc" %>
+      <%= f.number_field :cvc, class: 'form-control', value: '314' %>
+      <%= f.label :exp_month, "exp_month" %>
+      <%= f.number_field :exp_month, class: 'form-control', value: '7' %>
+      <%= f.label :exp_year, "exp_year" %>
+      <%= f.number_field :exp_year, class: 'form-control', value: '2022' %>
+      <%= f.submit "Subscribe", class: "btn btn-lg btn-outline-success my-2 mt-4 w-100" %>
+    <% end %>
+  </div>
+</div>
